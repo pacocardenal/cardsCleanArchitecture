@@ -2,7 +2,13 @@ import UIKit
 
 public class DeckOfCardsApiManager {
     
+    public typealias ErrorClosure = (Error) -> Void
+    
     public func downloadDeck(completion: @escaping (Deck) -> Void) {
+        self.downloadDeck(completion: completion, onError: nil)
+    }
+    
+    public func downloadDeck(completion: @escaping (Deck) -> Void, onError: ErrorClosure? = nil) {
         let urlString = "https://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=1"
         
         DispatchQueue.global().async {
@@ -18,13 +24,19 @@ public class DeckOfCardsApiManager {
                 }
             } catch {
                 print("Error in downloadDeck " + error.localizedDescription)
+                if let errorClosure = onError {
+                    errorClosure(error)
+                }
             }
         }
 
     }
     
-    // TODO: - Refactor function download deck/card
     public func downloadCard(deck: Deck, completion: @escaping (Card) -> Void) {
+        self.downloadCard(deck: deck, completion: completion, onError: nil)
+    }
+    
+    public func downloadCard(deck: Deck, completion: @escaping (Card) -> Void, onError: ErrorClosure? = nil) {
         let urlString = "https://deckofcardsapi.com/api/deck/\(deck.deckId)/draw/?count=1"
         
         DispatchQueue.global().async {
@@ -43,12 +55,19 @@ public class DeckOfCardsApiManager {
                 }
             } catch {
                 print("Error in downloadCard: " + error.localizedDescription)
+                if let errorClosure = onError {
+                    errorClosure(error)
+                }
             }
         }
         
     }
     
     public func downloadCardImage(card: Card, completion: @escaping (UIImage) -> Void) {
+        self.downloadCardImage(card: card, completion: completion, onError: nil)
+    }
+    
+    public func downloadCardImage(card: Card, completion: @escaping (UIImage) -> Void, onError: ErrorClosure? = nil) {
         let urlString = card.image
         
         DispatchQueue.global().async {
