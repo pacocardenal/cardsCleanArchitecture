@@ -10,7 +10,7 @@ public class GetCardFromDeckInteractor {
     
     public func execute(completion: @escaping (Card) -> Void) {
         
-        DeckOfCardsApiManager().downloadCard(deck: deck) {(card) in
+        DeckOfCardsApiManagerGCDImpl().downloadCard(deck: deck) {(card) in
             assert(Thread.current == Thread.main)
             
             completion(card)

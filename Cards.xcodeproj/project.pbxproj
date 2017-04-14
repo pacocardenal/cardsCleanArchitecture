@@ -15,9 +15,10 @@
 		E330BE3C1E9FDA280054760A /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = E330BE3B1E9FDA280054760A /* Deck.swift */; };
 		E330BE3E1E9FDA9B0054760A /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = E330BE3D1E9FDA9B0054760A /* Card.swift */; };
 		E330BE421E9FDCE00054760A /* DeckInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E330BE411E9FDCE00054760A /* DeckInteractor.swift */; };
-		E330BE441EA024F50054760A /* DeckOfCardsApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E330BE431EA024F50054760A /* DeckOfCardsApiManager.swift */; };
+		E330BE441EA024F50054760A /* DeckOfCardsApiManagerGCDImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E330BE431EA024F50054760A /* DeckOfCardsApiManagerGCDImpl.swift */; };
 		E330BE461EA1287E0054760A /* GetCardFromDeckInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E330BE451EA1287E0054760A /* GetCardFromDeckInteractor.swift */; };
 		E330BE481EA12FA00054760A /* GetCardImageInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E330BE471EA12FA00054760A /* GetCardImageInteractor.swift */; };
+		E330BE4A1EA18EE30054760A /* DeckOfCardsApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E330BE491EA18EE30054760A /* DeckOfCardsApiManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,9 +33,10 @@
 		E330BE3B1E9FDA280054760A /* Deck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
 		E330BE3D1E9FDA9B0054760A /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		E330BE411E9FDCE00054760A /* DeckInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeckInteractor.swift; sourceTree = "<group>"; };
-		E330BE431EA024F50054760A /* DeckOfCardsApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeckOfCardsApiManager.swift; sourceTree = "<group>"; };
+		E330BE431EA024F50054760A /* DeckOfCardsApiManagerGCDImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeckOfCardsApiManagerGCDImpl.swift; sourceTree = "<group>"; };
 		E330BE451EA1287E0054760A /* GetCardFromDeckInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetCardFromDeckInteractor.swift; sourceTree = "<group>"; };
 		E330BE471EA12FA00054760A /* GetCardImageInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetCardImageInteractor.swift; sourceTree = "<group>"; };
+		E330BE491EA18EE30054760A /* DeckOfCardsApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeckOfCardsApiManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,7 +137,8 @@
 		E330BE401E9FDC110054760A /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				E330BE431EA024F50054760A /* DeckOfCardsApiManager.swift */,
+				E330BE431EA024F50054760A /* DeckOfCardsApiManagerGCDImpl.swift */,
+				E330BE491EA18EE30054760A /* DeckOfCardsApiManager.swift */,
 			);
 			name = Managers;
 			sourceTree = "<group>";
@@ -215,12 +218,13 @@
 			files = (
 				E330BE3C1E9FDA280054760A /* Deck.swift in Sources */,
 				E330BE261E9E458F0054760A /* ViewController.swift in Sources */,
-				E330BE441EA024F50054760A /* DeckOfCardsApiManager.swift in Sources */,
+				E330BE441EA024F50054760A /* DeckOfCardsApiManagerGCDImpl.swift in Sources */,
 				E330BE241E9E458F0054760A /* AppDelegate.swift in Sources */,
 				E330BE421E9FDCE00054760A /* DeckInteractor.swift in Sources */,
 				E330BE461EA1287E0054760A /* GetCardFromDeckInteractor.swift in Sources */,
 				E330BE3E1E9FDA9B0054760A /* Card.swift in Sources */,
 				E330BE481EA12FA00054760A /* GetCardImageInteractor.swift in Sources */,
+				E330BE4A1EA18EE30054760A /* DeckOfCardsApiManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

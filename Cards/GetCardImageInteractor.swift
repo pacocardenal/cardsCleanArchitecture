@@ -9,7 +9,7 @@ public class GetCardImageInteractor {
     }
     
     public func execute(completion: @escaping (UIImage) -> Void) {
-        DeckOfCardsApiManager().downloadCardImage(card: card) { (image) in
+        DeckOfCardsApiManagerGCDImpl().downloadCardImage(card: card) { (image) in
             assert(Thread.current == Thread.main)
             
             completion(image)
