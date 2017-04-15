@@ -16,7 +16,7 @@ class ViewController: UIViewController {
 
     // MARK: - User actions
     @IBAction func deckButtonClicked(_ sender: UIButton) {
-        DeckInteractor(manager: DeckOfCardsApiManagerNSOperationQueueImpl()).execute { (deck) in
+        DeckInteractor(manager: DeckOfCardsApiManagerNSUrlSessionImpl()).execute { (deck) in
             print(deck.deckId)
             self.deck = deck
         }
@@ -24,9 +24,9 @@ class ViewController: UIViewController {
     
     @IBAction func cardButtonClicked(_ sender: UIButton) {
         paintCardPlaceholder()
-        GetCardFromDeckInteractor(deck: deck, manager: DeckOfCardsApiManagerNSOperationQueueImpl()).execute { (card) in
+        GetCardFromDeckInteractor(deck: deck, manager: DeckOfCardsApiManagerNSUrlSessionImpl()).execute { (card) in
             print(card.image)
-            GetCardImageInteractor(card: card, manager: DeckOfCardsApiManagerNSOperationQueueImpl()).execute(completion: { (image) in
+            GetCardImageInteractor(card: card, manager: DeckOfCardsApiManagerNSUrlSessionImpl()).execute(completion: { (image) in
                 self.cardImageView.image = image
             })
         }
