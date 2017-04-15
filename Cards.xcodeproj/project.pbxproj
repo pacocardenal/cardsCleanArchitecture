@@ -20,6 +20,7 @@
 		E330BE481EA12FA00054760A /* GetCardImageInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E330BE471EA12FA00054760A /* GetCardImageInteractor.swift */; };
 		E330BE4A1EA18EE30054760A /* DeckOfCardsApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E330BE491EA18EE30054760A /* DeckOfCardsApiManager.swift */; };
 		E330BE4C1EA195170054760A /* DeckOfCardsApiManagerFakeImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E330BE4B1EA195170054760A /* DeckOfCardsApiManagerFakeImpl.swift */; };
+		E330BE4E1EA1A0690054760A /* DeckOfCardsApiManagerNSOperationQueueImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E330BE4D1EA1A0690054760A /* DeckOfCardsApiManagerNSOperationQueueImpl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		E330BE471EA12FA00054760A /* GetCardImageInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetCardImageInteractor.swift; sourceTree = "<group>"; };
 		E330BE491EA18EE30054760A /* DeckOfCardsApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeckOfCardsApiManager.swift; sourceTree = "<group>"; };
 		E330BE4B1EA195170054760A /* DeckOfCardsApiManagerFakeImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeckOfCardsApiManagerFakeImpl.swift; sourceTree = "<group>"; };
+		E330BE4D1EA1A0690054760A /* DeckOfCardsApiManagerNSOperationQueueImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeckOfCardsApiManagerNSOperationQueueImpl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 				E330BE491EA18EE30054760A /* DeckOfCardsApiManager.swift */,
 				E330BE431EA024F50054760A /* DeckOfCardsApiManagerGCDImpl.swift */,
 				E330BE4B1EA195170054760A /* DeckOfCardsApiManagerFakeImpl.swift */,
+				E330BE4D1EA1A0690054760A /* DeckOfCardsApiManagerNSOperationQueueImpl.swift */,
 			);
 			name = Managers;
 			sourceTree = "<group>";
@@ -228,6 +231,7 @@
 				E330BE461EA1287E0054760A /* GetCardFromDeckInteractor.swift in Sources */,
 				E330BE3E1E9FDA9B0054760A /* Card.swift in Sources */,
 				E330BE481EA12FA00054760A /* GetCardImageInteractor.swift in Sources */,
+				E330BE4E1EA1A0690054760A /* DeckOfCardsApiManagerNSOperationQueueImpl.swift in Sources */,
 				E330BE4A1EA18EE30054760A /* DeckOfCardsApiManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
